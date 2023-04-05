@@ -1,0 +1,9 @@
+.menu {
+  background-color: #3f51b5;
+  width: 200px; }
+  .menu .lista a {
+    color: #fff !important; }
+    .menu .lista a i {
+      padding: 0 10px 0 0; }
+
+/*# sourceMappingURL=nav.component.css.map */

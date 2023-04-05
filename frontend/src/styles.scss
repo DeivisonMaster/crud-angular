@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+.msg-sucesso{
+    background-color: #28a745 !important;
+    color: #fff;
+}
+
+::ng-deep snack-bar-container.msg-sucesso{
+    background-color: #28a745 !important;
+    color: #fff;
+}
+
+::ng-deep .msg-sucesso{
+    background-color: #28a745 !important;
+    color: #fff;
+}
+
+.msg-erro{
+    background-color: #e35e6b !important;
+    color: #fff;
+}
+

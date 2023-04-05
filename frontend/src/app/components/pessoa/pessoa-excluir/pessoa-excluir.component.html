@@ -1,0 +1,41 @@
+<mat-card>
+    <mat-card-title>Excluir Cadastro de Pessoa</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [value]="pessoa.nome" name="nome" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Idade" [value]="pessoa.idade" name="idade" disabled>
+        </mat-form-field>
+
+        <h3>Endereço</h3>
+        <mat-form-field>
+            <input matInput placeholder="CEP" [value]="pessoa.endereco.cep" name="cep" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Número" [value]="pessoa.endereco.numero" name="numero" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Rua" [value]="pessoa.endereco.rua" name="rua" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Cidade" [value]="pessoa.endereco.cidade" name="cidade" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Estado" [value]="pessoa.endereco.estado" name="estado" disabled>
+        </mat-form-field>
+    </form>
+</mat-card>
+
+<button mat-raised-button (click)="excluir()" color="primary">
+    Excluir
+</button>
+
+<button mat-raised-button (click)="cancelar()" >
+    Cancelar
+</button>
+

@@ -1,0 +1,11 @@
+body {
+  background-color: #06F; }
+
+::ng-deep snack-bar-container.msgSucesso {
+  background-color: red;
+  color: #fff; }
+
+body {
+  background-color: red; }
+
+/*# sourceMappingURL=estilo.css.map */

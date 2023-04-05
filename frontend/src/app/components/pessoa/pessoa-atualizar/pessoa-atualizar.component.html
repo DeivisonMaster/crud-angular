@@ -1,0 +1,49 @@
+<mat-card>
+    <mat-card-title>Atualizar Cadastro de Pessoa</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Id" [(ngModel)]="pessoa.id" name="id" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="pessoa.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Idade" [(ngModel)]="pessoa.idade" name="idade">
+        </mat-form-field>
+
+        <h3>Endereço</h3>
+        <mat-form-field hintLabel="Max 9 digitos" appearance="fill">
+            <input matInput #input maxlength="9" placeholder="CEP" [(ngModel)]="pessoa.endereco.cep" name="cep">
+            <mat-hint align="end">{{ input.value.length }}/9</mat-hint>
+
+            <button mat-raised-button matSuffix mat-stroked-button aria-label="Pesquisar" (click)="pesquisarCEP()">
+                <i class="material-icons">search</i>
+            </button>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Número" [(ngModel)]="pessoa.endereco.numero" name="numero">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Rua" [(ngModel)]="pessoa.endereco.rua" name="rua">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Cidade" [(ngModel)]="pessoa.endereco.cidade" name="cidade">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Estado" [(ngModel)]="pessoa.endereco.estado" name="estado">
+        </mat-form-field>
+    </form>
+</mat-card>
+
+<button mat-raised-button (click)="atualizar()" color="primary">
+    Atualizar
+</button>
+
+<button mat-raised-button (click)="cancelar()" >
+    Cancelar
+</button>
+

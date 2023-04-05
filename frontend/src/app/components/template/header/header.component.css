@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center; }
+  .header a {
+    display: block;
+    align-items: center;
+    text-decoration: none; }
+  .header .logo {
+    max-height: 32px; }
+  .header .grupo-titulo {
+    padding-left: 25px; }
+    .header .grupo-titulo i {
+      padding-right: 5px; }
+
+/*# sourceMappingURL=header.component.css.map */

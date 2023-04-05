@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACA,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM",
+"sources": ["pessoa-inserir.component.scss"],
+"names": [],
+"file": "pessoa-inserir.component.css"
+}
